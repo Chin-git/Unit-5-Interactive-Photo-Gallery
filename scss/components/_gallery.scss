@@ -1,0 +1,10 @@
+.gallery {
+    &-1, &-2, &-3 {
+        @include flexy($direction: row, $basis: 1, $justify: center);
+    }
+}
+
+img {
+    padding-right: 40px;
+    padding-bottom: 40px;
+}

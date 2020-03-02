@@ -1,0 +1,28 @@
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+}
+
+input {
+    border: none;
+    &:focus {
+     outline: none;
+    }
+
+    &::placeholder {
+      padding-left: 10px;
+      color: lighten(#ccc, 5%);
+      font-size: 1.1rem;
+    }
+    
+    &:focus::placeholder {
+        color: transparent;
+    }
+}
