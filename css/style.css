@@ -1,11 +1,21 @@
 /* ============================================= */
 /*              Gallery                      */
 /* ============================================= */
+.photo-gallery {
+  margin-top: 50px;
+}
+
 .gallery-1, .gallery-2, .gallery-3 {
   display: flex;
   flex-basis: 1;
   flex-direction: row;
   justify-content: center;
+}
+.gallery-1 > img:last-of-type, .gallery-2 > img:last-of-type, .gallery-3 > img:last-of-type {
+  padding-right: 0;
+}
+.gallery-3 > img {
+  padding-bottom: 0;
 }
 
 img {
@@ -43,6 +53,10 @@ a {
 
 body {
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 input {
