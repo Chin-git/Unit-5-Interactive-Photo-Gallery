@@ -6,17 +6,17 @@
     margin-top: 50px;
 }
 
-.gallery {
-    &-1, &-2, &-3 {
-        @include flexy($direction: row, $basis: 1, $justify: center);
+@for $i from 1 through 3 {
+    .gallery-#{$i} {
+       @include flexy($direction: row, $basis: 1, $justify: center); 
     }
     
-    &-1 > img:last-of-type, 
-    &-2 > img:last-of-type,
-    &-3 > img:last-of-type {
+    .gallery-#{$i} > img:last-of-type {
         padding-right: 0;
     }
-    
+}
+
+.gallery {
     &-3 > img {
         padding-bottom: 0;
     }
