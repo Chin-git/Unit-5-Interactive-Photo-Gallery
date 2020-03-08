@@ -12,18 +12,31 @@
     }
     
     .gallery-#{$i} > img:last-of-type {
-        padding-right: 0;
+        margin-right: 0;
     }
 }
 
 .gallery {
     &-3 > img {
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
+a {
+    transition: transform 0.5s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
 
 img {
-    padding-right: 40px;
-    padding-bottom: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0,0,0, .5);
+}
+
+img.lb-image {
+    margin: 0;
 }

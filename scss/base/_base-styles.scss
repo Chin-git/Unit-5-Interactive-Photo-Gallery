@@ -10,6 +10,7 @@ a {
 body {
     margin: 0 auto;
     height: 100vh;
+    font-family: 'Sen', sans-serif;
     @include flexy($direction: column, $justify: center);
 }
 
