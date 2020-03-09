@@ -3,11 +3,19 @@
     $basis: null,
     $direction: null,
     $justify: null,
-    $items: null) {
+    $items: null,
+    $wrap: null) {
     display: $disp;
     flex-basis: $basis;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $items;
+    flex-wrap: $wrap;
     @content;
+}
+
+@mixin mq($break) {
+    @media ( min-width: $break ) {
+        @content;
+    }
 }

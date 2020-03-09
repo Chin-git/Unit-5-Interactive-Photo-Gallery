@@ -7,7 +7,6 @@
 
 .gallery-1 {
   display: flex;
-  flex-basis: 1;
   flex-direction: row;
   justify-content: center;
 }
@@ -16,9 +15,12 @@
   margin-right: 0;
 }
 
+.gallery-1 a:hover {
+  transform: scale(1.1);
+}
+
 .gallery-2 {
   display: flex;
-  flex-basis: 1;
   flex-direction: row;
   justify-content: center;
 }
@@ -27,9 +29,12 @@
   margin-right: 0;
 }
 
+.gallery-2 a:hover {
+  transform: scale(1.1);
+}
+
 .gallery-3 {
   display: flex;
-  flex-basis: 1;
   flex-direction: row;
   justify-content: center;
 }
@@ -38,16 +43,16 @@
   margin-right: 0;
 }
 
+.gallery-3 a:hover {
+  transform: scale(1.1);
+}
+
 .gallery-3 > img {
   margin-bottom: 0;
 }
 
 a {
   transition: transform 0.5s ease;
-}
-
-a:hover {
-  transform: scale(1.1);
 }
 
 img {

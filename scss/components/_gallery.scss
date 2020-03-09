@@ -8,11 +8,14 @@
 
 @for $i from 1 through 3 {
     .gallery-#{$i} {
-       @include flexy($direction: row, $basis: 1, $justify: center); 
+       @include flexy($direction: row, $justify: center); 
     }
     
     .gallery-#{$i} > img:last-of-type {
         margin-right: 0;
+    }
+    .gallery-#{$i} a:hover {
+        transform: scale(1.1);
     }
 }
 
@@ -24,10 +27,6 @@
 
 a {
     transition: transform 0.5s ease;
-}
-
-a:hover {
-    transform: scale(1.1);
 }
 
 img {
