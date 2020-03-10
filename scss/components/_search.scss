@@ -3,7 +3,6 @@
 /* ============================================= */
 
 .search-bar {
-    @include flexy($justify: center, $wrap: wrap);
     margin: 20px 0;
 }
 
@@ -12,7 +11,7 @@
     border: 1px solid lighten(#ccc, 5%);
     font-size: 1.5em;
     padding-left: 5px;
-    
+    height: 40px;
     &:focus {
         border: 1px solid darken(#ccc, 30%);
     }

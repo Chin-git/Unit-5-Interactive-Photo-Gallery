@@ -3,39 +3,27 @@
 /* ============================================= */
 
 .photo-gallery {
-    margin-top: 50px;
-}
-
-@for $i from 1 through 3 {
-    .gallery-#{$i} {
-        @include flexy($direction: row, $justify: center, $wrap: wrap);
-    }
-
-    .gallery-#{$i} img {
-        margin-bottom: 40px;
-    }
-    .gallery-#{$i} a:hover {
+    margin-top: 40px;
+    max-width: 1200px;
+    @include flexy($direction: row, $justify: center, $wrap: wrap);
+    
+    & a:hover {
         transform: scale(1.1);
     }
 }
+
 
 a {
     transition: transform 0.5s ease;
 }
 
-.gallery {
-    &-1 a:last-of-type img:last-of-type,
-    &-2 a:last-of-type img:last-of-type,
-    &-3 a:last-of-type img:last-of-type {
-        margin-right: 0;
-    }
-}
-
 img {
-    margin-right: 40px;
+    margin: 0 40px 40px 40px;
     border-radius: 5px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
+
+
 
 img.lb-image {
     margin: 0;

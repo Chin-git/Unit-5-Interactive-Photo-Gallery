@@ -13,7 +13,7 @@ body {
     max-width: 1920px;
     font-family: 'Sen', sans-serif;
     background-color: beige;
-    @include flexy($direction: column, $justify: center);
+    @include flexy($direction: column, $items: center);
 }
 
 input {
