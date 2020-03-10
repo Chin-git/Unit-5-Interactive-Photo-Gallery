@@ -8,20 +8,14 @@
 
 @for $i from 1 through 3 {
     .gallery-#{$i} {
-       @include flexy($direction: row, $justify: center); 
+        @include flexy($direction: row, $justify: center, $wrap: wrap);
     }
-    
-    .gallery-#{$i} > img:last-of-type {
-        margin-right: 0;
+
+    .gallery-#{$i} img {
+        margin-bottom: 40px;
     }
     .gallery-#{$i} a:hover {
         transform: scale(1.1);
-    }
-}
-
-.gallery {
-    &-3 > img {
-        margin-bottom: 0;
     }
 }
 
@@ -29,13 +23,25 @@ a {
     transition: transform 0.5s ease;
 }
 
+.gallery {
+    &-3 img {
+        margin-bottom: 0;
+    }
+    
+    &-1 a:last-of-type img:last-of-type,
+    &-2 a:last-of-type img:last-of-type,
+    &-3 a:last-of-type img:last-of-type {
+        margin-right: 0;
+    }
+}
+
 img {
     margin-right: 40px;
-    margin-bottom: 40px;
     border-radius: 5px;
-    box-shadow: 3px 3px 5px rgba(0,0,0, .5);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 img.lb-image {
     margin: 0;
+    padding: 0;
 }
