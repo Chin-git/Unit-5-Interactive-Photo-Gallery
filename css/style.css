@@ -32,7 +32,9 @@ img.lb-image {
 /*              Search Bar                      */
 /* ============================================= */
 .search-bar {
-  margin: 20px 0;
+  margin: 100px 0 0 0;
+  display: flex;
+  justify-content: center;
 }
 
 #search {
