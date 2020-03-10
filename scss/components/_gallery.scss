@@ -24,10 +24,6 @@ a {
 }
 
 .gallery {
-    &-3 img {
-        margin-bottom: 0;
-    }
-    
     &-1 a:last-of-type img:last-of-type,
     &-2 a:last-of-type img:last-of-type,
     &-3 a:last-of-type img:last-of-type {

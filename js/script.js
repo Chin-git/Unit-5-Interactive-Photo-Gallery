@@ -3,14 +3,10 @@
 $(document).ready(function() {
     $("#search").on("keyup", function() {
         //Target input element and pass event listener "keyup"
-        let value = $(this) //case sensitive
-            .val()
-            .toLowerCase();
+        let value = $(this).val().toLowerCase(); //case sensitive  
         $("a").each(function() {
             //loop through all link elements on page
-            let str = $(this) //targeting the data-title attribute
-                .attr("data-title")
-                .toLowerCase();
+            let str = $(this).attr("data-title"); //targeting the data-title attribute
             if (str.indexOf(value) > -1) {
                 //if the data title attribute contains a letter in value/input
                 $(this).show(); //show all possible options

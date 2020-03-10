@@ -54,9 +54,6 @@ a {
   transition: transform 0.5s ease;
 }
 
-.gallery-3 img {
-  margin-bottom: 0;
-}
 .gallery-1 a:last-of-type img:last-of-type, .gallery-2 a:last-of-type img:last-of-type, .gallery-3 a:last-of-type img:last-of-type {
   margin-right: 0;
 }
@@ -123,7 +120,6 @@ img.lb-image {
 }
 @media (max-width: 536px) {
   .gallery-3 a:last-of-type img:last-of-type {
-    margin-top: 40px;
     margin-right: 40px;
   }
   .gallery-1 a:last-of-type img:last-of-type, .gallery-2 a:last-of-type img:last-of-type {
@@ -174,6 +170,7 @@ body {
   height: 100vh;
   max-width: 1920px;
   font-family: "Sen", sans-serif;
+  background-color: beige;
   display: flex;
   flex-direction: column;
   justify-content: center;
